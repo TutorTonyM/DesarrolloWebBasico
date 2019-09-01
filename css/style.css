@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Crete+Round&display=swap');
+
+body{
+    background-color: #EEEEEE;
+    font-family: 'Crete Round', serif;
+}
+
+.main-container,
+.main-container-narrow{
+    position: relative;
+    padding-top: 20px;    
+    margin-bottom: 20px;
+    min-height: calc(100vh - 132px);
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+.form{
+    position: relative;
+    margin: 0 auto;
+    /* margin: 0 auto 20px auto; */
+    width: 100%;
+    border: 3px #888888 solid;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#new-post-fileds{
+    display: none;
+}
+
+.form h1{
+    font-size: 2rem;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-dynamic{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.post{
+    margin: 0 15px 40px 15px;
+    border-bottom: 2px #DDDDDD solid;
+    padding-bottom: 60px;
+}
+
+.post img{
+    position: relative;
+    width: 100%;
+}
+
+.post > h1{
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+}
+
+.post > span{
+    display: block;
+    color: #AAAAAA;
+    margin: 20px 0;
+}
+
+.post > span > em{
+    color: #222222;
+}
+
+.post > p{
+    font-size: 1.5rem;
+}
+
+.post > p.category{
+    font-size: 1.7rem;
+    color: #AAAAAA;
+}
+
+@media only screen and (min-width: 576px){
+    .form{
+        width: 400px;
+        box-shadow: 0 10px 50px 15px #AAAAAA;
+    }
+
+    .form.lg{
+        width: 70%;
+    }
+
+    .form h1{
+        font-size: 2.5rem;
+    }
+
+    .btn-dynamic{
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .main-container-narrow{
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.custom-alert{
+    top: -20px;
+    height: 100px;
+    line-height: 70px;
+}
+
+.custom-alert button{
+    line-height: 70px;
+}
